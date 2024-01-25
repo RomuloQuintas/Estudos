@@ -1,0 +1,65 @@
+@media screen and (max-width: 760px){
+
+    header{
+        flex-direction: column;
+    }
+
+    h1 > span{
+        font-size: 50px;
+        line-height: 15px;
+    }
+
+    main{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    
+    
+    h2{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    h2 > span{
+        font-size: 42px;
+    }
+
+
+    p{
+        text-align: justify;
+        padding: 25px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    form [type="submit"]{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    input{
+        align-self: center;
+        width: 70%;
+        
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        padding: 0px;
+        margin: 4px;
+        font-weight: lighter;
+        font-size: 13px;
+        
+    }
+}
