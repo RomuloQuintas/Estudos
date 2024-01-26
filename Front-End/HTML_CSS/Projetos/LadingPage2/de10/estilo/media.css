@@ -1,0 +1,35 @@
+@media screen and (max-width: 740px){
+
+
+    header{
+        padding: 15px;
+    }
+
+    header > h1{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    header > p{
+        font-size: 13px;
+    }
+
+    nav a{
+        font-size: 14px;
+        border: 2px solid white;
+        padding: 3px;
+    }
+
+    main h1 {
+        font-size: 15px;
+    }
+
+    main h2{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+}

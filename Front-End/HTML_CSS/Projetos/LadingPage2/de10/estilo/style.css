@@ -38,7 +38,7 @@ a.externo::after{
 
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)) ;
-    min-height: 100px;
+    min-height: 70px;
     text-align: center;
     padding: 30px;
 
@@ -97,8 +97,9 @@ main{
 }
 
 main h1{
+    background-image: linear-gradient(to right, var(--cor1), transparent) ;
     font-family: var(--fonte-android);
-    color: var(--cor5);
+    color: var(--cor4);
 }
 
 main h2{
