@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula06</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="ceu" src="ceu.jpg"/>
+        </a-assets>
+
+        <a-sky src="ceu3.jpg"></a-sky>
+
+        <a-sphere position="0 0 -5" color="yellow" radius="2"></a-sphere>
+
+        <a-torus id="rosquinha" position="0 0 -5" color="#43A367" arc="360" radius="3" radius-tubular="0.1"></a-torus>
+
+        <a-camera position="0 0 0"></a-camera>
+    </a-scene>
+
+    <script>
+        // Aguarda o carregamento completo do DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializa as variáveis de rotação para os eixos x, y e z
+            let rx, ry, rz;
+            rx = ry = rz = 0; // Inicia todas as rotações como 0
+
+            // Seleciona o elemento com id "rosquinha"
+            const rosquinha = document.querySelector("#rosquinha");
+
+            // Define um intervalo para atualizar a rotação do torus a cada 10 milissegundos
+            const intervalo = setInterval(() => {
+                rx += 1; // Incrementa a rotação em y
+                if (rx > 360) {
+                    rx = 0; // Reseta a rotação em y após completar 360 graus
+                }
+                // Cria a string de rotação no formato esperado "rx ry rz"
+                let rot = `${rx} ${ry} ${rz}`;
+                // Define o atributo de rotação do torus com a nova rotação
+                rosquinha.setAttribute("rotation", rot);
+            }, 10); // O intervalo é definido para 10 milissegundos
+        });
+    </script>
+</body>
+</html>
